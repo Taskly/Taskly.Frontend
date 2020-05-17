@@ -1,0 +1,22 @@
+<mat-toolbar class="app-navbar" color="primary">
+    <a href="/"><span>Taskly</span></a>
+
+    <div class="app-navbar-menu-container">
+        <ul role="navigation">
+            <li>
+                <a class="nav-link" routerLink="/workflow" routerLinkActive="active-link">
+                    <span class="nav-link-inner">Worflow</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" routerLink="/about" routerLinkActive="active-link">
+                    <span class="nav-link-inner">About</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>
+
+<div class="app-content-container">
+    <router-outlet></router-outlet>
+</div>

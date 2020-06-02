@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { ProjectComponent } from './project/project.component';
 import { WorkflowRoutingModule } from './workflow-routing.module';
+import { MaterialModule } from '../common/material.module';
 
 @NgModule({
     declarations: [
@@ -10,7 +11,8 @@ import { WorkflowRoutingModule } from './workflow-routing.module';
         ProjectComponent],
     imports: [
         CommonModule,
-        WorkflowRoutingModule
+        WorkflowRoutingModule,
+        MaterialModule
     ]
 })
 export class WorkflowModule {

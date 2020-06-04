@@ -13,7 +13,7 @@ export class ProjectsListComponent implements OnInit {
         this.workflowClient = workflowClient;
     }
 
-    public projects: Array<Project>
+    public projects: Project[];
 
     public async ngOnInit(): Promise<void> {
         const projectsList = await this.workflowClient.getAllProjects();

@@ -4,11 +4,13 @@ import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { ProjectComponent } from './project/project.component';
 import { WorkflowRoutingModule } from './workflow-routing.module';
 import { MaterialModule } from '../common/material.module';
+import { WorkItemDetailsComponent } from './work-item-details/work-item-details.component';
 
 @NgModule({
     declarations: [
         ProjectsListComponent,
-        ProjectComponent],
+        ProjectComponent,
+        WorkItemDetailsComponent],
     imports: [
         CommonModule,
         WorkflowRoutingModule,

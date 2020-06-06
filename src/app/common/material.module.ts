@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { MatListModule } from '@angular/material/list';
         MatIconModule,
         MatInputModule,
         MatToolbarModule,
-        MatListModule
+        MatListModule,
+        MatTableModule
     ],
     exports: [
         FormsModule,
@@ -28,7 +30,8 @@ import { MatListModule } from '@angular/material/list';
         MatIconModule,
         MatInputModule,
         MatToolbarModule,
-        MatListModule
+        MatListModule,
+        MatTableModule
     ],
     providers: [
         // { provide: MAT_DATE_LOCALE, useValue: 'ru-RU' },

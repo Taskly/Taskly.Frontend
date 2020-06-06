@@ -16,10 +16,15 @@ export class ProjectComponent implements OnInit {
     }
 
     public project: Project;
+    public displayedColumns: string[] = ['title', 'status'];
 
     public async ngOnInit(): Promise<void> {
         const projectId = this.route.snapshot.paramMap.get('id');
         this.project = await this.workflowClient.getProjectWithWorkItems(projectId);
+    }
+
+    public onWorkItemClick(id: string) {
+        console.log(id);
     }
 
     private route: ActivatedRoute;

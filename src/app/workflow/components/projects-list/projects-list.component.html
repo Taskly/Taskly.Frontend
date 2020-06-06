@@ -1,0 +1,10 @@
+<div class="cards-container">
+    <a class="card" *ngFor="let project of projects" routerLink="project/{{project.id}}">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>{{project.title}}</mat-card-title>
+                <mat-card-subtitle>{{project.description}}</mat-card-subtitle>
+            </mat-card-header>
+        </mat-card>
+    </a>
+</div>

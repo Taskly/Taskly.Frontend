@@ -1,0 +1,5 @@
+<div *ngIf="project">
+    <h2>{{project.title}}</h2>
+    <app-work-items-list [workItems]="project.workItems"></app-work-items-list>
+    <app-work-item-details [workItem]="project.workItems[0]"></app-work-item-details>
+</div>

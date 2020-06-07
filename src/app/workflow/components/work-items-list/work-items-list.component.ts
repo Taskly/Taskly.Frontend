@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { WorkItem } from 'src/app/model/work-item';
 
@@ -13,13 +13,16 @@ export class WorkItemsListComponent implements OnInit {
 
     @Input()
     public workItems: WorkItem[];
+
+    @Output()
+    public workItemClick = new EventEmitter<WorkItem>();
     
     public displayedColumns: string[] = ['title', 'status'];
 
     public ngOnInit(): void {
     }
 
-    public onWorkItemClick(id: string) {
-        console.log(id);
+    public onWorkItemClick(workItem: WorkItem) {
+        this.workItemClick.emit(workItem)
     }
 }

@@ -10,5 +10,5 @@
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let element; columns: displayedColumns;" (click)="onWorkItemClick(element.id)"></tr>
+    <tr mat-row *matRowDef="let element; columns: displayedColumns;" (click)="onWorkItemClick(element)"></tr>
 </table>

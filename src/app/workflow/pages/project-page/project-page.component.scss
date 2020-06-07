@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+app-work-items-list {
+    width: 48%;
+    margin-right: 2%;
+}
+
+app-work-item-details {
+    width: 48%;
+    margin-left: 2%;
+    margin-top: 15px;
+}

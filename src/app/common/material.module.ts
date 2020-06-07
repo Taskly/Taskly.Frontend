@@ -9,6 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
     imports: [
@@ -20,7 +21,8 @@ import { MatTableModule } from '@angular/material/table';
         MatInputModule,
         MatToolbarModule,
         MatListModule,
-        MatTableModule
+        MatTableModule,
+        MatGridListModule
     ],
     exports: [
         FormsModule,
@@ -31,7 +33,8 @@ import { MatTableModule } from '@angular/material/table';
         MatInputModule,
         MatToolbarModule,
         MatListModule,
-        MatTableModule
+        MatTableModule,
+        MatGridListModule
     ],
     providers: [
         // { provide: MAT_DATE_LOCALE, useValue: 'ru-RU' },

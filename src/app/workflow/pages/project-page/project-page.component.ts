@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { WorkflowClient } from 'src/app/common/workflow-client';
 import { Project } from 'src/app/model/project';
+import { WorkItem } from 'src/app/model/work-item';
 
 @Component({
     selector: 'app-project-page',
@@ -16,6 +17,7 @@ export class ProjectPageComponent implements OnInit {
     }
 
     public project: Project;
+    public selectedWorkItem: WorkItem;
 
     public async ngOnInit(): Promise<void> {
         const projectId = this.route.snapshot.paramMap.get('id');

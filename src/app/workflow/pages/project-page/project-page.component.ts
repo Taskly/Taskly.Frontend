@@ -17,10 +17,12 @@ export class ProjectPageComponent implements OnInit {
     }
 
     public project: Project;
+    public workItems: WorkItem[];
     public selectedWorkItem: WorkItem;
 
     public async ngOnInit(): Promise<void> {
         const projectId = this.route.snapshot.paramMap.get('id');
-        this.project = await this.workflowClient.getProjectWithWorkItems(projectId);
+        this.project = await this.workflowClient.getProject(projectId);
+        this.workItems = await this.workflowClient.getWorkItemsByProject(projectId);
     }
 }

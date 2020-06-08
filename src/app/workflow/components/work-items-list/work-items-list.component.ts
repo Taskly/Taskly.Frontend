@@ -17,7 +17,7 @@ export class WorkItemsListComponent implements OnInit {
     @Output()
     public workItemClick = new EventEmitter<WorkItem>();
     
-    public displayedColumns: string[] = ['title', 'status'];
+    public displayedColumns: string[] = ['title', 'status', 'created'];
 
     public ngOnInit(): void {
     }

@@ -1,8 +1,8 @@
 <div *ngIf="project">
     <h2>{{project.title}}</h2>
     <hr />
-    <div class="container">
-        <app-work-items-list [workItems]="project.workItems" (workItemClick)="selectedWorkItem = $event"></app-work-items-list>
+    <div *ngIf="workItems" class="container">
+        <app-work-items-list [workItems]="workItems" (workItemClick)="selectedWorkItem = $event"></app-work-items-list>
         <app-work-item-details *ngIf="selectedWorkItem" [workItem]="selectedWorkItem"></app-work-item-details>
     </div>
 </div>

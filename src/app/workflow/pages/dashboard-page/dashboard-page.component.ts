@@ -16,7 +16,6 @@ export class DashboardPageComponent implements OnInit {
     public projects: Project[];
 
     public async ngOnInit(): Promise<void> {
-        const projectsList = await this.workflowClient.getAllProjects();
-        this.projects = projectsList.items;
+        this.projects = await this.workflowClient.getAllProjects();
     }
 }

@@ -1,9 +1,10 @@
 <div>
-    <h5 class="work-item-id">{{workItem.id}}</h5>
+    <h5>{{workItem.id}}</h5>
     <div class="work-item-header">
         <h3>{{workItem.title}}</h3>
-        <span class="work-item-status">{{workItem.status.title}}</span>
+        <span class="work-item-status">{{workItem.status}}</span>
     </div>
     <hr />
     <p>{{workItem.description}}</p>
+    <h5>{{workItem.created | date:'dd.MM.yyyy mm:ss'}}</h5>
 </div>
